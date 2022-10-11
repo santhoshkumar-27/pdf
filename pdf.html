@@ -21,21 +21,73 @@
 <style>
     :root {
         font-family: 'Noto Serif', serif;
+        --sodexoblue: #312a85;
     }
 
     .c1 {
         font-size: 2.6rem;
         line-height: 2.5rem;
     }
+
     .cp {
         font-size: 1.2rem;
         letter-spacing: 1.4px;
     }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1;
+    }
+
+    .i-item {
+        height: 500px;
+    }
+
+    .img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .h-10 {
+        height: 10px;
+    }
+
+    .w-mc {
+        width: max-content;
+    }
+
+    .pr-5 {
+        padding-right: 5rem !important;
+    }
+
+    .pi-7 {
+        padding-inline: 7rem;
+    }
+
+    .c-b {
+        color: var(--sodexoblue);
+    }
+
+    .fs-2r {
+        font-size: 2rem !important;
+    }
+
+    .fs-12r {
+        font-size: 1.2rem;
+    }
+
+    .lh-2r {
+        line-height: 2rem;
+    }
 </style>
 
 <body>
-    <div class="container-fluid">
-        <div class="row text-light" style="background-color:#312a85;">
+    <div class="container-fluid m-0">
+        <!-- header -->
+        <!-- page 1 start -->
+        <div class="row text-light" style="background-color:var(--sodexoblue);">
             <div class="col-6 px-5 py-5" style="padding-left: 17rem !important;">
                 <div class="d-flex">
                     <div class="d-flex align-items-center">
@@ -56,7 +108,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 px-5 py-5">
+            <div class="col-6 px-5 py-5 ps-0">
                 <div class="d-flex flex-column align-items-start">
                     <div class="c1 mb-3" style="font-weight:900;line-height: 3rem;width: 265px;">
                         Social Impact Report
@@ -66,6 +118,125 @@
                     </div>
                     <div class="cl cp">
                         Site name:
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- whitebar -->
+        <div class="w-100 h-10"></div>
+        <div class="w-100 d-flex h-10">
+            <span class="d-inline-block w-50" style="background-color:#d11380;"></span>
+            <span class="d-inline-block w-50" style="background-color:#16dcc8;"></span>
+        </div>
+        <div class="grid-container">
+            <div class="i-item w-100 position-relative">
+                <img src="./imag1.jpg" class="img" alt="">
+                <h3 class="position-absolute top-50 start-50 translate-middle text-light w-mc cl"
+                    style="font-size: 6rem;">people<span style="color:#cf1b82;">.</span></h3>
+            </div>
+            <div class="i-item w-100 position-relative">
+                <img src="./plants.jpg" class="img" alt="">
+                <h3 class="position-absolute top-50 start-50 translate-middle text-light w-mc cl"
+                    style="font-size: 6rem;">planet<span style="color:#59c0b9;">.</span></h3>
+            </div>
+        </div>
+        <div class="w-100 d-flex h-10">
+            <span class="d-inline-block w-50" style="background-color:#91bfd4;"></span>
+            <span class="d-inline-block w-50" style="background-color:#ff9777;"></span>
+        </div>
+        <div class="grid-container">
+            <div class="i-item w-100 position-relative">
+                <img src="./place.jpg" class="img" alt="">
+                <h3 class="position-absolute top-50 start-50 translate-middle text-light w-mc cl"
+                    style="font-size: 6rem;">places<span style="color:#807eba;">.</span></h3>
+            </div>
+            <div class="i-item w-100 position-relative">
+                <img src="./partner.jpg" class="img" alt="">
+                <h3 class="position-absolute top-50 start-50 translate-middle text-light w-mc cl"
+                    style="font-size: 6rem;">partners<span style="color:#ff9477;">.</span></h3>
+            </div>
+        </div>
+        <!-- whitebar -->
+        <div class="w-100 h-10"></div>
+        <div class="w-100 h-10" style="background-color: var(--sodexoblue);height: 60px;"></div>
+        <!-- page 1 end -->
+        <!-- page 2 start -->
+        <div>
+            <!-- top -->
+            <div class="mt-5">
+                <div class="d-flex justify-content-between pi-7">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p class="text-capitalize fw-bold" style="color: var(--sodexoblue);font-size:5rem;">overview</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center my-3">
+                        <!-- <div class="d-flex align-items-center"> -->
+                        <img src="./grup.png" width="50" alt="" style="border-radius:6rem;">
+                        <!-- </div> -->
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <div class="text-uppercase fw-bold mb-2">
+                                <p class="m-0 c-b lh-2r fs-2r">
+                                    Social
+                                </p>
+                                <p class="m-0 c-b lh-2r fs-2r">
+                                    value
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <img width="40" src="./800px-Sodexo_logo.svg.png" alt="" class="mx-auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- top end -->
+            <!-- middle start -->
+            <div>
+                <div class="d-flex justify-content-between pi-7 ">
+                    <div class="w-75 pr-5">
+                        <p class="fw-200 fs-12r">
+                            Sodexo is a global outsourcing company working in partnership with
+                            public and private clients to design, deliver and support core business
+                            operations. In the UK & Ireland, we employee 30,000 colleagues who
+                            deliver our solutions from food and catering, facilities management,
+                            property and technical services, through to home care; concierge and
+                            employee engagement and recognition services. Wherever we operate
+                            around the world – be it in corporate workplaces, prisons, universities,
+                            schools, military bases, hospitals, or central and local government
+                            sites – we are committed to delivering services that achieve value,
+                            better outcomes and improve quality of life for the people and
+                            communities we serve.
+                        </p>
+                        <p class="fw-200 fs-12r">
+                            Sodexo has a commitment to creating a healthier, greener, safer
+                            and more prosperous society across the UK & Ireland. It sets out the
+                            priority areas we are focusing on from our wider social value threeyear strategy. This will
+                            not only keep the momentum going of the
+                            impact we are making, but also further enhances our focus to meet
+                            today’s challenges for a better tomorrow. Deeds speak louder than
+                            words, so we also commit to publicly report on our achievements
+                            against these pledges on an annual basis – demonstrating with
+                            evidence and examples where we are leading the way in creating a
+                            positive impact for: Our People, Planet, Places and Partner.
+                        </p>
+                        <p class="fw-200 fs-12r">
+                            This report will highlight the work we have done during 2021-2022.
+                        </p>
+                    </div>
+                    <div class="w-25 d-flex justify-content-center align-items-center">
+                        <div>
+                            <div class="w-100" style="height: 2px;background-color: var(--sodexoblue);"></div>
+                            <p class="my-3 c-b" style="font-size: 2rem;font-weight: 200;
+                            line-height: 1.1;">
+                                Sodexo has a
+                                commitment
+                                to creating a
+                                healthier, greener,
+                                safer and more
+                                prosperous
+                                society across
+                                the UK & Ireland.</p>
+                            <div class="w-100" style="height: 2px;background-color: var(--sodexoblue);"></div>
+                        </div>
                     </div>
                 </div>
             </div>
