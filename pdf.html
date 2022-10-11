@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha584-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et5URy9Bv1WTRi" crossorigin="anonymous">
@@ -15,162 +19,57 @@
     <title>pdf</title>
 </head>
 <style>
-    .flex-container {
-        display: flex;
-        justify-content: center;
-        background-color: DodgerBlue;
-
+    :root {
+        font-family: 'Noto Serif', serif;
     }
 
-    .strat {
-        display: flex;
-        justify-content: flex-start;
-        background-color: DodgerBlue;
-
+    .c1 {
+        font-size: 2.6rem;
+        line-height: 2.5rem;
     }
-
-    .center {
-        align-items: center;
+    .cp {
+        font-size: 1.2rem;
+        letter-spacing: 1.4px;
     }
 </style>
 
 <body>
     <div class="container-fluid">
-        <div class="row " style="height: 300px ;">
-            <div class="col-sm-6 flex-container center" style="color: white; ">
-                <div class="col-sm-5">
-                    <h1>image</h1>
-                </div>
-                <div class="col-sm-5">
-                    <h1>SOCIAL VALUE</h1>
-                    <h4 style="padding: 20px;">sodexo</h4>
-                </div>
-            </div>
-            <div class="col-sm-6 strat center" style="color: white; background-color: rebeccapurple;">
-                <h1>
-                    SOCIAL IMPACT REPORT
-                </h1>
-                <p>
-                    For period Sept 2021-Aug 2022
-                    Site name:
-                </p>
-
-            </div>
-        </div>
-        <div class="row" style="padding-top: 8px; background-color: white;"></div>
-        <div class="row">
-            <div class="col-sm-6" style="background-color: mediumvioletred;padding-top: 8px;"></div>
-            <div class="col-sm-6" style="background-color: lightseagreen;padding-top: 8px;"></div>
-        </div>
-        <div class="row image1" style="height: 370px; width: 100%; ">
-            <div class="col-sm-6" style="width: 50%;padding-left: 0px !important; padding-right:  0px !important;"> <img height="386" src="./1.png" alt=""></div>
-            <div class="col-sm-6" style="width: 50%;padding-left: 25px !important; padding-right:  0px !important;"> <img height="386" src="./2.png" alt=""></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6" style="background-color: blue;padding-top: 8px;"></div>
-            <div class="col-sm-6" style="background-color: orangered;padding-top: 8px;"></div>
-        </div>
-        <div class="row" style="height: 370px;">
-            <div class="col-sm-6" style="background-color: burlywood;"> image1</div>
-            <div class="col-sm-6" style="background-color: lightcoral;"> image 2</div>
-        </div>
-        <div class="row" style="background-color: white;"></div>
-        <div class="row" style="background-color: blue; height:60px"></div>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <div style="padding: 70px;">
-                    <h1>Overview</h1>
-                    <p>
-                        Sodexo is a global outsourcing company working in partnership with
-                        public and private clients to design, deliver and support core business
-                        operations. In the UK & Ireland, we employee 50,000 colleagues who
-                        deliver our solutions from food and catering, facilities management,
-                        property and technical services, through to home care; concierge and
-                        employee engagement and recognition services. Wherever we operate
-                        around the world – be it in corporate workplaces, prisons, universities,
-                        schools, military bases, hospitals, or central and local government
-                        sites – we are committed to delivering services that achieve value,
-                        better outcomes and improve quality of life for the people and
-                        communities we serve
-                    </p>
-                    <p>
-                        Sodexo has a commitment to creating a healthier, greener, safer
-                        and more prosperous society across the UK & Ireland. It sets out the
-                        priority areas we are focusing on from our wider social value threeyear strategy. This will not
-                        only
-                        keep the momentum going of the
-                        impact we are making, but also further enhances our focus to meet
-                        today’s challenges for a better tomorrow. Deeds speak louder than
-                        words, so we also commit to publicly report on our achievements
-                        against these pledges on an annual basis – demonstrating with
-                        evidence and examples where we are leading the way in creating a
-                        positive impact for: Our People, Planet, Places and Partner
-                    </p>
-                    <p>
-                        This report will highlight the work we have done during 2021-2022.
-                    </p>
+        <div class="row text-light" style="background-color:#312a85;">
+            <div class="col-6 px-5 py-5" style="padding-left: 17rem !important;">
+                <div class="d-flex">
+                    <div class="d-flex align-items-center">
+                        <img src="./grup.png" width="100" alt="" style="border-radius:6rem;">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="ps-2 text-uppercase fw-bold mb-2">
+                            <p class="m-0 c1">
+                                Social
+                            </p>
+                            <p class="m-0 c1">
+                                value
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <img width="68" src="./800px-Sodexo_logo.svg.png" alt="" class="mx-auto">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-6 " style="background-color: red;">
-                <div style="justify-content:flex-end;display: grid;text-align: center;">
-                    <h1>image</h1>
-                    <h3>SOCIAL VALUE</h3>
-                    <h5 style="padding: 20px;">sodexo</h5>
+            <div class="col-6 px-5 py-5">
+                <div class="d-flex flex-column align-items-start">
+                    <div class="c1 mb-3" style="font-weight:900;line-height: 3rem;width: 265px;">
+                        Social Impact Report
+                    </div>
+                    <div class="cl cp">
+                        For period Sept 2021-Aug 2022
+                    </div>
+                    <div class="cl cp">
+                        Site name:
+                    </div>
                 </div>
-                <hr style="width: 90%; color: white;">
-                <div>
-                    <h4>
-                        Sodexo has a
-                        commitment
-                        to creating a
-                        healthier, greener,
-                        safer and more
-                        prosperous
-                        society across
-                        the UK & Ireland.
-                    </h4>
-                </div>
-                <hr style="width: 90%; color: white;">
             </div>
         </div>
-        <div style=" height: 500px; background-color: #1FDBC5;">
-
-        </div>
-        <div style="height: auto">
-            <div style=" height: 500px; background-color: #1FDBC5;"></div>
-            <div>
-                <h1>People</h1>
-                <h5>Total:</h5>
-            </div>
-            <div>
-                <h1>Planet</h1>
-                <h5>Total:</h5>
-            </div>
-            <div>
-                <h1>Places</h1>
-                <h5>Total:</h5>
-            </div>
-            <div>
-                <h1>Partners</h1>
-                <h5>Total:</h5>
-            </div>
-        </div>
-        <div class="row" style="background-color:darkmagenta;">
-            <div class="col-sm-6" style="padding: 80px;">
-                <h1>image</h1>
-                <h3>SOCIAL VALUE</h3>
-                <h5>PEOPLe</h5>
-            </div>
-            <div class="col-sm-6" style="padding: 80px;">
-                <h2>
-                    Creating employment opportunities
-                    and enabling our colleagues to
-                    thrive.
-                </h2>
-            </div>
-        </div>
-        <div class="row" style="padding-top: 6px; background-color:gold ;"></div>
     </div>
 </body>
 
