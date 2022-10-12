@@ -81,6 +81,37 @@
     .lh-2r {
         line-height: 2rem;
     }
+
+    .bg-image {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bg-image::before {
+        content: '';
+        /* background-image: url('./bg.jpeg'); */
+        background-color: whitesmoke;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.75;
+        z-index: 1;
+    }
+
+    .pt-7 {
+        padding-top: 7rem;
+    }
+
+    .fs-3r {
+        font-size: 3rem;
+    }
 </style>
 
 <body>
@@ -246,6 +277,69 @@
             <!-- middle end -->
         </div>
         <!-- page 2 end -->
+        <!-- page 3 start -->
+        <div class="mt-5">
+            <div class="bg-image">
+                <div class="pi-7 pt-7" style="z-index: 2;">
+                    <!-- container - 1 -->
+                    <div class="grid-container">
+                        <div class="i-item w-100 d-flex flex-column align-items-start justify-content-center">
+                            <div>
+                                <h3 class="text-capitalize w-mc cl" style="font-size: 6rem;color:#cf1b82;">people</h3>
+                                <p class="text-dark text-capitalize fs-3r">
+                                    total:
+                                </p>
+                            </div>
+                        </div>
+                        <div class="i-item w-100">
+                            <img src="./slot1.png" class="img" alt="">
+                        </div>
+                    </div>
+                    <!-- container - 2 -->
+                    <div class="grid-container">
+                        <div class="i-item w-100">
+                            <img src="./slot2.png" class="img" alt="">
+                        </div>
+                        <div class="i-item w-100 d-flex flex-column align-items-end justify-content-center">
+                            <div>
+                                <h3 class="text-capitalize w-mc cl" style="font-size: 6rem;color:#16dcc8;">planet</h3>
+                                <p class="text-dark text-capitalize fs-3r">
+                                    total:
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- container - 3 -->
+                    <div class="grid-container">
+                        <div class="i-item w-100 d-flex flex-column align-items-start justify-content-center">
+                            <div>
+                                <h3 class="text-capitalize w-mc cl" style="font-size: 6rem;color:#8580d9;">places</h3>
+                                <p class="text-dark text-capitalize fs-3r">
+                                    total:
+                                </p>
+                            </div>
+                        </div>
+                        <div class="i-item w-100">
+                            <img src="./slot3.png" class="img" alt="">
+                        </div>
+                    </div>
+                    <!-- container - 4 -->
+                    <div class="grid-container">
+                        <div class="i-item w-100">
+                            <img src="./slot4.png" class="img" alt="">
+                        </div>
+                        <div class="i-item w-100 d-flex flex-column align-items-end justify-content-center">
+                            <div>
+                                <h3 class="text-capitalize w-mc cl" style="font-size: 6rem;color: #ff9b7c;">partners</h3>
+                                <p class="text-dark text-capitalize fs-3r">
+                                    total:
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
